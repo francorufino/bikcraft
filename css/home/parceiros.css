@@ -38,6 +38,10 @@
   .parceiros {
     padding-bottom: 60px;
   }
+  .parceiros li {
+    display: flex;
+    padding: 20px;
+  }
 
   .parceiros h2 {
     margin-bottom: 20px;
