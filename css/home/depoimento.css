@@ -57,4 +57,14 @@
     padding: 40px 20px;
     justify-self: center;
   }
+
+  .depoimento p::before,
+  .depoimento p::after {
+    font-size: 2rem;
+  }
+
+  .depoimento p::before {
+    position: initial;
+    left: 0px;
+  }
 }
