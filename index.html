@@ -13,7 +13,6 @@
     <link rel="preload" href="./css/style.css" as="style" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,17 +39,19 @@
     <main class="introducao-bg">
       <div class="introducao container">
         <div class="introducao-conteudo">
-          <h1 class="font-1-xxl cor-0">
+          <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">
             Tailor-made Eletric Bicycles<span class="cor-p1">.</span>
           </h1>
-          <p class="font-2-l cor-5">
+          <p class="font-2-l cor-5 fadeInDown" data-anime="400">
             High-quality, high-precision electric bicycles, tailor-made for you.
             explore the world at your speed with Bikcraft.
           </p>
-          <a class="botao" href="./bicicletas.html">Choose yours</a>
+          <a class="botao fadeInDown" href="./bicicletas.html" data-anime="600"
+            >Choose yours</a
+          >
         </div>
 
-        <picture>
+        <picture data-anime="800" class="fadeInDown">
           <source
             media="(max-width: 800px)"
             srcset="./img/bicicletas/nimbus.jpg"
@@ -345,5 +346,7 @@
         Bikcraft &copy; Some rights reserved.
       </p>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

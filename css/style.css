@@ -5,6 +5,7 @@
 @import "./utils/cores.css";
 @import "./utils/components.css";
 @import "./utils/formulario.css";
+@import "./utils/animacao.css";
 @import "./home/introducao.css";
 @import "./home/tecnologia.css";
 @import "./home/parceiros.css";

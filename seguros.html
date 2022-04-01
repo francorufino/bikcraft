@@ -14,7 +14,7 @@
     <link rel="preload" href="./css/style.css" as="style" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,7 +47,7 @@
       </div>
 
       <div class="seguros container">
-        <div class="seguros-item">
+        <div class="seguros-item fadeInLeft" data-anime="200">
           <h3 class="font-1-xl cor-6">SILVER</h3>
           <span class="font-1-xl cor-0"
             >U$ 99<span class="font-1-xs cor-6">monthly</span></span
@@ -58,10 +58,14 @@
             <li>24/7 Customer Service</li>
             <li>Country Coverage</li>
           </ul>
-          <a class="botao secundario" href="./orgamento.html">Sign up</a>
+          <a
+            class="botao secundario"
+            href="./orcamento.html?tipo=seguro&produto=prata"
+            >Sign up</a
+          >
         </div>
 
-        <div class="seguros-item">
+        <div class="seguros-item fadeInRight" data-anime="400">
           <h3 class="font-1-xl cor-p1">GOLD</h3>
           <span class="font-1-xl cor-0"
             >U$ 199<span class="font-1-xs cor-6">monthly</span></span
@@ -74,7 +78,9 @@
             <li>Discount at affiliate places</li>
             <li>Access to the Bikcraft Club</li>
           </ul>
-          <a class="botao" href="./orgamento.html">Sign up</a>
+          <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro"
+            >Sign up</a
+          >
         </div>
       </div>
     </main>
@@ -144,78 +150,166 @@
 
       <dl>
         <div>
-          <dt class="font-1-m-b">What types of payments do you accept?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta1"
+              aria-expanded="true"
+            >
+              What types of payment do you accept?
+            </button>
+          </dt>
+          <dd id="pergunta1" class="font-2-s cor-9 ativa">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">How can I get in touch?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta2"
+              aria-expanded="false"
+            >
+              How can I get in touch?
+            </button>
+          </dt>
+          <dd id="pergunta2" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Are there any discounts?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta3"
+              aria-expanded="false"
+            >
+              Are there any discounts?
+            </button>
+          </dt>
+          <dd id="pergunta3" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Where can I buy a Bikcraft?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta3"
+              aria-expanded="false"
+            >
+              Where can I buy a Bikcraft?
+            </button>
+          </dt>
+          <dd id="pergunta3" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">What is your return policy?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta4"
+              aria-expanded="false"
+            >
+              What is your return policy?
+            </button>
+          </dt>
+          <dd id="pergunta4" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Do you have gift cards?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta5"
+              aria-expanded="false"
+            >
+              Do you have gift cards?
+            </button>
+          </dt>
+          <dd id="pergunta5" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Do you keeep my credit card information?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta6"
+              aria-expanded="false"
+            >
+              Do you keeep my credit card information?
+            </button>
+          </dt>
+          <dd id="pergunta6" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">Can I get assistance out of the USA?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta7"
+              aria-expanded="false"
+            >
+              Can I get assistance out of the USA?
+            </button>
+          </dt>
+          <dd id="pergunta7" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">How easy is it to switch insurance plans?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta8"
+              aria-expanded="false"
+            >
+              How easy is it to switch insurance plans?
+            </button>
+          </dt>
+          <dd id="pergunta8" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">How many swaps can I make per year?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta9"
+              aria-expanded="false"
+            >
+              How many swaps can I make per year?
+            </button>
+          </dt>
+          <dd id="pergunta9" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
         </div>
         <div>
-          <dt class="font-1-m-b">How many items can I add to my bicycle?</dt>
-          <dd class="font-2-s cor-9">
+          <dt>
+            <button
+              class="font-1-m-b"
+              aria-controls="pergunta10"
+              aria-expanded="false"
+            >
+              How many items can I add to my bicycle?
+            </button>
+          </dt>
+          <dd id="pergunta10" class="font-2-s cor-9">
             We accept one time payments or in installments in most of credit
             cards. For one time payment we accept Zelle and Paypal.
           </dd>
@@ -264,5 +358,7 @@
         Bikcraft &copy; Some rights reserved.
       </p>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
