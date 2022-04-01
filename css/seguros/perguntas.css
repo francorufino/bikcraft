@@ -50,18 +50,18 @@
   transform: rotate(180deg);
 }
 
-.perguntas dd {
+.js .perguntas dd {
   display: none;
+}
+
+.js .perguntas dd.ativa {
+  display: block;
 }
 
 .perguntas dd {
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
-}
-
-.perguntas dd.ativa {
-  display: block;
 }
 
 @media (max-width: 800px) {
